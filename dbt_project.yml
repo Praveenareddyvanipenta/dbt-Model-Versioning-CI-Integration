@@ -1,0 +1,15 @@
+
+name: dbt_retail_warehouse
+version: '1.0'
+profile: duckdb_profile
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+models:
+  dbt_retail_warehouse:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

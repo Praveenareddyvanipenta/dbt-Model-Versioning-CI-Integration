@@ -1,0 +1,8 @@
+
+duckdb_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: duckdb.duckdb
+      threads: 4
